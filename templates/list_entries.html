@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <table class="table">
+    <thead class="thead-inverse">
+      <tr>
+        <th>Location</th>
+        <th>Kind Of Information</th>
+        <th>Criticality</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for value in inputvalues %}
+        <tr>
+          <td><small class="text-muted d-block">{{ value.Location }}</small></td>
+          <td><small class="text-muted d-block">{{ value.Kind_of_info }}</small></td>
+          <td><small class="text-muted d-block">{{ value.Criticality }}</small></td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}

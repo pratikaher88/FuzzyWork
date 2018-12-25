@@ -1,0 +1,1 @@
+web: gunicorn FuzzyWork.wsgi --log-file -

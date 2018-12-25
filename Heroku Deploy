@@ -1,0 +1,500 @@
+Last login: Tue Dec 25 09:04:18 on console
+TARA:~ pratikaher$ cd DjangoProjects
+TARA:DjangoProjects pratikaher$ cd FuzzyWork
+TARA:FuzzyWork pratikaher$ conda env list
+# conda environments:
+#
+base                  *  /Users/pratikaher/anaconda
+EIIIWork                 /Users/pratikaher/anaconda/envs/EIIIWork
+FuzzyWork                /Users/pratikaher/anaconda/envs/FuzzyWork
+django_project           /Users/pratikaher/anaconda/envs/django_project
+djangorest               /Users/pratikaher/anaconda/envs/djangorest
+mynewenv                 /Users/pratikaher/anaconda/envs/mynewenv
+sibts                    /Users/pratikaher/anaconda/envs/sibts
+
+TARA:FuzzyWork pratikaher$ source activate FUzzyWOrk
+(FUzzyWOrk) TARA:FuzzyWork pratikaher$ source deactivate
+TARA:FuzzyWork pratikaher$ source activate FuzzyWork
+(FuzzyWork) TARA:FuzzyWork pratikaher$ pip freeze > requirements.txt
+(FuzzyWork) TARA:FuzzyWork pratikaher$ sudo pip install gunicorn
+Password:
+The directory '/Users/pratikaher/Library/Caches/pip/http' or its parent directory is not owned by the current user and the cache has been disabled. Please check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
+The directory '/Users/pratikaher/Library/Caches/pip' or its parent directory is not owned by the current user and caching wheels has been disabled. check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
+Collecting gunicorn
+  Downloading https://files.pythonhosted.org/packages/8c/da/b8dd8deb741bff556db53902d4706774c8e1e67265f69528c14c003644e6/gunicorn-19.9.0-py2.py3-none-any.whl (112kB)
+    100% |████████████████████████████████| 122kB 410kB/s 
+Installing collected packages: gunicorn
+Successfully installed gunicorn-19.9.0
+(FuzzyWork) TARA:FuzzyWork pratikaher$ sudo pip install dj-database-url
+The directory '/Users/pratikaher/Library/Caches/pip/http' or its parent directory is not owned by the current user and the cache has been disabled. Please check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
+The directory '/Users/pratikaher/Library/Caches/pip' or its parent directory is not owned by the current user and caching wheels has been disabled. check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
+Collecting dj-database-url
+  Downloading https://files.pythonhosted.org/packages/d4/a6/4b8578c1848690d0c307c7c0596af2077536c9ef2a04d42b00fabaa7e49d/dj_database_url-0.5.0-py2.py3-none-any.whl
+Installing collected packages: dj-database-url
+Successfully installed dj-database-url-0.5.0
+(FuzzyWork) TARA:FuzzyWork pratikaher$ sudo pip install psycopg2
+The directory '/Users/pratikaher/Library/Caches/pip/http' or its parent directory is not owned by the current user and the cache has been disabled. Please check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
+The directory '/Users/pratikaher/Library/Caches/pip' or its parent directory is not owned by the current user and caching wheels has been disabled. check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
+Collecting psycopg2
+  Downloading https://files.pythonhosted.org/packages/a8/43/61f34c4d91370d239916f7f0fb989d841b9cfe70cd1e16b62c880cea093f/psycopg2-2.7.6.1-cp36-cp36m-macosx_10_6_intel.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl (1.5MB)
+    100% |████████████████████████████████| 1.5MB 398kB/s 
+Installing collected packages: psycopg2
+Successfully installed psycopg2-2.7.6.1
+(FuzzyWork) TARA:FuzzyWork pratikaher$ python manage.py makemigrations
+/Users/pratikaher/anaconda/envs/FuzzyWork/lib/python3.6/site-packages/psycopg2/__init__.py:144: UserWarning: The psycopg2 wheel package will be renamed from release 2.8; in order to keep installing from binary please use "pip install psycopg2-binary" instead. For details see: <http://initd.org/psycopg/docs/install.html#binary-install-from-pypi>.
+  """)
+No changes detected
+(FuzzyWork) TARA:FuzzyWork pratikaher$ sudo pip install psycopg2-binary
+The directory '/Users/pratikaher/Library/Caches/pip/http' or its parent directory is not owned by the current user and the cache has been disabled. Please check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
+The directory '/Users/pratikaher/Library/Caches/pip' or its parent directory is not owned by the current user and caching wheels has been disabled. check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
+Collecting psycopg2-binary
+  Downloading https://files.pythonhosted.org/packages/bd/40/9476f3bbca35e067428fb40b5dbf210dd6e4d31af3b8a63655642ad44452/psycopg2_binary-2.7.6.1-cp36-cp36m-macosx_10_6_intel.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl (1.5MB)
+    100% |████████████████████████████████| 1.5MB 403kB/s 
+Installing collected packages: psycopg2-binary
+Successfully installed psycopg2-binary-2.7.6.1
+(FuzzyWork) TARA:FuzzyWork pratikaher$ python manage.py makemigrations
+No changes detected
+(FuzzyWork) TARA:FuzzyWork pratikaher$ python manage.py makemigrations FuzzyWok
+App 'FuzzyWok' could not be found. Is it in INSTALLED_APPS?
+(FuzzyWork) TARA:FuzzyWork pratikaher$ python manage.py makemigrations FuzzyWork
+App 'FuzzyWork' could not be found. Is it in INSTALLED_APPS?
+(FuzzyWork) TARA:FuzzyWork pratikaher$ python manage.py makemigrations DisReg
+No changes detected in app 'DisReg'
+(FuzzyWork) TARA:FuzzyWork pratikaher$ python manage.py makemigrations DisReg
+Migrations for 'DisReg':
+  DisReg/migrations/0001_initial.py
+    - Create model UserInputValues
+(FuzzyWork) TARA:FuzzyWork pratikaher$ python manage.py migrate
+Operations to perform:
+  Apply all migrations: DisReg, admin, auth, contenttypes, sessions
+Running migrations:
+  Applying DisReg.0001_initial... OK
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying sessions.0001_initial... OK
+(FuzzyWork) TARA:FuzzyWork pratikaher$ python manage.py createsuperuser
+Username (leave blank to use 'pratikaher'): 
+Email address: 
+Password: 
+Password (again): 
+Superuser created successfully.
+(FuzzyWork) TARA:FuzzyWork pratikaher$ sudo pip install decouple
+The directory '/Users/pratikaher/Library/Caches/pip/http' or its parent directory is not owned by the current user and the cache has been disabled. Please check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
+The directory '/Users/pratikaher/Library/Caches/pip' or its parent directory is not owned by the current user and caching wheels has been disabled. check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
+Collecting decouple
+  Could not find a version that satisfies the requirement decouple (from versions: )
+No matching distribution found for decouple
+(FuzzyWork) TARA:FuzzyWork pratikaher$ sudo pip install python-decouple==3.1
+The directory '/Users/pratikaher/Library/Caches/pip/http' or its parent directory is not owned by the current user and the cache has been disabled. Please check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
+The directory '/Users/pratikaher/Library/Caches/pip' or its parent directory is not owned by the current user and caching wheels has been disabled. check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
+Collecting python-decouple==3.1
+  Downloading https://files.pythonhosted.org/packages/9b/99/ddfbb6362af4ee239a012716b1371aa6d316ff1b9db705bfb182fbc4780f/python-decouple-3.1.tar.gz
+Installing collected packages: python-decouple
+  Running setup.py install for python-decouple ... done
+Successfully installed python-decouple-3.1
+(FuzzyWork) TARA:FuzzyWork pratikaher$ git init
+Initialized empty Git repository in /Users/pratikaher/DjangoProjects/FuzzyWork/.git/
+(FuzzyWork) TARA:FuzzyWork pratikaher$ git add .
+(FuzzyWork) TARA:FuzzyWork pratikaher$ git commit -m "first commit"
+[master (root-commit) d5cf89c] first commit
+ 33 files changed, 381 insertions(+)
+ create mode 100644 DisReg/__init__.py
+ create mode 100644 DisReg/__pycache__/__init__.cpython-36.pyc
+ create mode 100644 DisReg/__pycache__/admin.cpython-36.pyc
+ create mode 100644 DisReg/__pycache__/forms.cpython-36.pyc
+ create mode 100644 DisReg/__pycache__/models.cpython-36.pyc
+ create mode 100644 DisReg/__pycache__/urls.cpython-36.pyc
+ create mode 100644 DisReg/__pycache__/views.cpython-36.pyc
+ create mode 100644 DisReg/admin.py
+ create mode 100644 DisReg/apps.py
+ create mode 100644 DisReg/forms.py
+ create mode 100644 DisReg/migrations/0001_initial.py
+ create mode 100644 DisReg/migrations/__init__.py
+ create mode 100644 DisReg/migrations/__pycache__/0001_initial.cpython-36.pyc
+ create mode 100644 DisReg/migrations/__pycache__/__init__.cpython-36.pyc
+ create mode 100644 DisReg/models.py
+ create mode 100644 DisReg/tests.py
+ create mode 100644 DisReg/urls.py
+ create mode 100644 DisReg/views.py
+ create mode 100644 FuzzyWork/__init__.py
+ create mode 100644 FuzzyWork/__pycache__/__init__.cpython-36.pyc
+ create mode 100644 FuzzyWork/__pycache__/settings.cpython-36.pyc
+ create mode 100644 FuzzyWork/__pycache__/urls.cpython-36.pyc
+ create mode 100644 FuzzyWork/__pycache__/wsgi.cpython-36.pyc
+ create mode 100644 FuzzyWork/settings.py
+ create mode 100644 FuzzyWork/urls.py
+ create mode 100644 FuzzyWork/wsgi.py
+ create mode 100644 Procfile
+ create mode 100755 manage.py
+ create mode 100644 runtime.txt
+ create mode 100644 templates/base.html
+ create mode 100644 templates/form_template.html
+ create mode 100644 templates/list_entries.html
+ create mode 100644 templates/outputfile.html
+(FuzzyWork) TARA:FuzzyWork pratikaher$ git remote add origin https://github.com/pratikaher88/FuzzyWork.git
+(FuzzyWork) TARA:FuzzyWork pratikaher$ git push -u origin master
+Counting objects: 40, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (37/37), done.
+Writing objects: 100% (40/40), 11.28 KiB | 1.88 MiB/s, done.
+Total 40 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/pratikaher88/FuzzyWork.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+(FuzzyWork) TARA:FuzzyWork pratikaher$ git clone https://github.com/pratikaher88/FuzzyWork.git && cd FuzzyWork
+fatal: destination path 'FuzzyWork' already exists and is not an empty directory.
+(FuzzyWork) TARA:FuzzyWork pratikaher$ pip freeze >requirements.txt
+(FuzzyWork) TARA:FuzzyWork pratikaher$ git add requirements.txt
+(FuzzyWork) TARA:FuzzyWork pratikaher$ git commit -m "first commit"
+[master 59788ac] first commit
+ 1 file changed, 9 insertions(+)
+ create mode 100644 requirements.txt
+(FuzzyWork) TARA:FuzzyWork pratikaher$ git push -u origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 396 bytes | 396.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/pratikaher88/FuzzyWork.git
+   d5cf89c..59788ac  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+(FuzzyWork) TARA:FuzzyWork pratikaher$ pwd
+/Users/pratikaher/DjangoProjects/FuzzyWork
+(FuzzyWork) TARA:FuzzyWork pratikaher$ heroku login
+heroku: Press any key to open up the browser to login or q to exit: 
+Logging in... done
+Logged in as pratikaher88@gmail.com
+(FuzzyWork) TARA:FuzzyWork pratikaher$ heroku creatr fuzzyapp
+ ›   Warning: creatr is not a heroku command.
+Did you mean create? [y/n]: y
+Creating ⬢ fuzzyapp... done
+https://fuzzyapp.herokuapp.com/ | https://git.heroku.com/fuzzyapp.git
+(FuzzyWork) TARA:FuzzyWork pratikaher$ heroku addons:create heroku-postgresql:hobby-dev
+Creating heroku-postgresql:hobby-dev on ⬢ fuzzyapp... free
+Database has been created and is available
+ ! This database is empty. If upgrading, you can transfer
+ ! data from another database with pg:copy
+Created postgresql-animated-85268 as DATABASE_URL
+Use heroku addons:docs heroku-postgresql to view documentation
+(FuzzyWork) TARA:FuzzyWork pratikaher$ git push heroku master
+Counting objects: 43, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (40/40), done.
+Writing objects: 100% (43/43), 11.62 KiB | 1.94 MiB/s, done.
+Total 43 (delta 3), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote: 
+remote: -----> Python app detected
+remote: -----> Installing python-3.6.7
+remote: -----> Installing pip
+remote: -----> Installing SQLite3
+remote: -----> Installing requirements with pip
+remote:        Collecting certifi==2018.11.29 (from -r /tmp/build_3b31dadb290d6b650e92aa9e273a3c5a/requirements.txt (line 1))
+remote:          Downloading https://files.pythonhosted.org/packages/9f/e0/accfc1b56b57e9750eba272e24c4dddeac86852c2bebd1236674d7887e8a/certifi-2018.11.29-py2.py3-none-any.whl (154kB)
+remote:        Collecting dj-database-url==0.5.0 (from -r /tmp/build_3b31dadb290d6b650e92aa9e273a3c5a/requirements.txt (line 2))
+remote:          Downloading https://files.pythonhosted.org/packages/d4/a6/4b8578c1848690d0c307c7c0596af2077536c9ef2a04d42b00fabaa7e49d/dj_database_url-0.5.0-py2.py3-none-any.whl
+remote:        Collecting Django==2.1.4 (from -r /tmp/build_3b31dadb290d6b650e92aa9e273a3c5a/requirements.txt (line 3))
+remote:          Downloading https://files.pythonhosted.org/packages/fd/9a/0c028ea0fe4f5803dda1a7afabeed958d0c8b79b0fe762ffbf728db3b90d/Django-2.1.4-py3-none-any.whl (7.3MB)
+remote:        Collecting django-crispy-forms==1.7.2 (from -r /tmp/build_3b31dadb290d6b650e92aa9e273a3c5a/requirements.txt (line 4))
+remote:          Downloading https://files.pythonhosted.org/packages/9a/05/6bad05742d185ec2fabfa4deab05cafde286eb3f383fba24b3674340aca2/django_crispy_forms-1.7.2-py2.py3-none-any.whl (105kB)
+remote:        Collecting gunicorn==19.9.0 (from -r /tmp/build_3b31dadb290d6b650e92aa9e273a3c5a/requirements.txt (line 5))
+remote:          Downloading https://files.pythonhosted.org/packages/8c/da/b8dd8deb741bff556db53902d4706774c8e1e67265f69528c14c003644e6/gunicorn-19.9.0-py2.py3-none-any.whl (112kB)
+remote:        Collecting psycopg2==2.7.6.1 (from -r /tmp/build_3b31dadb290d6b650e92aa9e273a3c5a/requirements.txt (line 6))
+remote:          Downloading https://files.pythonhosted.org/packages/bc/2a/61a8f9719bd6df5b421abd91740cb0595fc3c17b28eaf89fe4f144472ca6/psycopg2-2.7.6.1-cp36-cp36m-manylinux1_x86_64.whl (2.7MB)
+remote:        Collecting psycopg2-binary==2.7.6.1 (from -r /tmp/build_3b31dadb290d6b650e92aa9e273a3c5a/requirements.txt (line 7))
+remote:          Downloading https://files.pythonhosted.org/packages/cd/eb/4e872a11edd82079b4163035389051668c58cd2acc30777b6bee73f5f8a3/psycopg2_binary-2.7.6.1-cp36-cp36m-manylinux1_x86_64.whl (2.7MB)
+remote:        Collecting python-decouple==3.1 (from -r /tmp/build_3b31dadb290d6b650e92aa9e273a3c5a/requirements.txt (line 8))
+remote:          Downloading https://files.pythonhosted.org/packages/9b/99/ddfbb6362af4ee239a012716b1371aa6d316ff1b9db705bfb182fbc4780f/python-decouple-3.1.tar.gz
+remote:        Collecting pytz==2018.7 (from -r /tmp/build_3b31dadb290d6b650e92aa9e273a3c5a/requirements.txt (line 9))
+remote:          Downloading https://files.pythonhosted.org/packages/f8/0e/2365ddc010afb3d79147f1dd544e5ee24bf4ece58ab99b16fbb465ce6dc0/pytz-2018.7-py2.py3-none-any.whl (506kB)
+remote:        Installing collected packages: certifi, dj-database-url, pytz, Django, django-crispy-forms, gunicorn, psycopg2, psycopg2-binary, python-decouple
+remote:          Running setup.py install for python-decouple: started
+remote:            Running setup.py install for python-decouple: finished with status 'done'
+remote:        Successfully installed Django-2.1.4 certifi-2018.11.29 dj-database-url-0.5.0 django-crispy-forms-1.7.2 gunicorn-19.9.0 psycopg2-2.7.6.1 psycopg2-binary-2.7.6.1 python-decouple-3.1 pytz-2018.7
+remote: 
+remote: -----> $ python manage.py collectstatic --noinput
+remote:        Traceback (most recent call last):
+remote:          File "manage.py", line 15, in <module>
+remote:            execute_from_command_line(sys.argv)
+remote:          File "/app/.heroku/python/lib/python3.6/site-packages/django/core/management/__init__.py", line 381, in execute_from_command_line
+remote:            utility.execute()
+remote:          File "/app/.heroku/python/lib/python3.6/site-packages/django/core/management/__init__.py", line 375, in execute
+remote:            self.fetch_command(subcommand).run_from_argv(self.argv)
+remote:          File "/app/.heroku/python/lib/python3.6/site-packages/django/core/management/base.py", line 316, in run_from_argv
+remote:            self.execute(*args, **cmd_options)
+remote:          File "/app/.heroku/python/lib/python3.6/site-packages/django/core/management/base.py", line 353, in execute
+remote:            output = self.handle(*args, **options)
+remote:          File "/app/.heroku/python/lib/python3.6/site-packages/django/contrib/staticfiles/management/commands/collectstatic.py", line 188, in handle
+remote:            collected = self.collect()
+remote:          File "/app/.heroku/python/lib/python3.6/site-packages/django/contrib/staticfiles/management/commands/collectstatic.py", line 114, in collect
+remote:            handler(path, prefixed_path, storage)
+remote:          File "/app/.heroku/python/lib/python3.6/site-packages/django/contrib/staticfiles/management/commands/collectstatic.py", line 343, in copy_file
+remote:            if not self.delete_file(path, prefixed_path, source_storage):
+remote:          File "/app/.heroku/python/lib/python3.6/site-packages/django/contrib/staticfiles/management/commands/collectstatic.py", line 249, in delete_file
+remote:            if self.storage.exists(prefixed_path):
+remote:          File "/app/.heroku/python/lib/python3.6/site-packages/django/core/files/storage.py", line 308, in exists
+remote:            return os.path.exists(self.path(name))
+remote:          File "/app/.heroku/python/lib/python3.6/site-packages/django/contrib/staticfiles/storage.py", line 43, in path
+remote:            raise ImproperlyConfigured("You're using the staticfiles app "
+remote:        django.core.exceptions.ImproperlyConfigured: You're using the staticfiles app without having set the STATIC_ROOT setting to a filesystem path.
+remote: 
+remote:  !     Error while running '$ python manage.py collectstatic --noinput'.
+remote:        See traceback above for details.
+remote: 
+remote:        You may need to update application code to resolve this error.
+remote:        Or, you can disable collectstatic for this application:
+remote: 
+remote:           $ heroku config:set DISABLE_COLLECTSTATIC=1
+remote: 
+remote:        https://devcenter.heroku.com/articles/django-assets
+remote:  !     Push rejected, failed to compile Python app.
+remote: 
+remote:  !     Push failed
+remote: Verifying deploy...
+remote: 
+remote: !	Push rejected to fuzzyapp.
+remote: 
+To https://git.heroku.com/fuzzyapp.git
+ ! [remote rejected] master -> master (pre-receive hook declined)
+error: failed to push some refs to 'https://git.heroku.com/fuzzyapp.git'
+(FuzzyWork) TARA:FuzzyWork pratikaher$ heroku config:set DISABLE_COLLECTSTATIC=1
+Setting DISABLE_COLLECTSTATIC and restarting ⬢ fuzzyapp... done, v8
+DISABLE_COLLECTSTATIC: 1
+(FuzzyWork) TARA:FuzzyWork pratikaher$ git push heroku master
+Counting objects: 43, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (40/40), done.
+Writing objects: 100% (43/43), 11.62 KiB | 1.94 MiB/s, done.
+Total 43 (delta 3), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote: 
+remote: -----> Python app detected
+remote: -----> Installing python-3.6.7
+remote: -----> Installing pip
+remote: -----> Installing SQLite3
+remote: -----> Installing requirements with pip
+remote:        Collecting certifi==2018.11.29 (from -r /tmp/build_80c70617428bf4de44b1c5863014e914/requirements.txt (line 1))
+remote:          Downloading https://files.pythonhosted.org/packages/9f/e0/accfc1b56b57e9750eba272e24c4dddeac86852c2bebd1236674d7887e8a/certifi-2018.11.29-py2.py3-none-any.whl (154kB)
+remote:        Collecting dj-database-url==0.5.0 (from -r /tmp/build_80c70617428bf4de44b1c5863014e914/requirements.txt (line 2))
+remote:          Downloading https://files.pythonhosted.org/packages/d4/a6/4b8578c1848690d0c307c7c0596af2077536c9ef2a04d42b00fabaa7e49d/dj_database_url-0.5.0-py2.py3-none-any.whl
+remote:        Collecting Django==2.1.4 (from -r /tmp/build_80c70617428bf4de44b1c5863014e914/requirements.txt (line 3))
+remote:          Downloading https://files.pythonhosted.org/packages/fd/9a/0c028ea0fe4f5803dda1a7afabeed958d0c8b79b0fe762ffbf728db3b90d/Django-2.1.4-py3-none-any.whl (7.3MB)
+remote:        Collecting django-crispy-forms==1.7.2 (from -r /tmp/build_80c70617428bf4de44b1c5863014e914/requirements.txt (line 4))
+remote:          Downloading https://files.pythonhosted.org/packages/9a/05/6bad05742d185ec2fabfa4deab05cafde286eb3f383fba24b3674340aca2/django_crispy_forms-1.7.2-py2.py3-none-any.whl (105kB)
+remote:        Collecting gunicorn==19.9.0 (from -r /tmp/build_80c70617428bf4de44b1c5863014e914/requirements.txt (line 5))
+remote:          Downloading https://files.pythonhosted.org/packages/8c/da/b8dd8deb741bff556db53902d4706774c8e1e67265f69528c14c003644e6/gunicorn-19.9.0-py2.py3-none-any.whl (112kB)
+remote:        Collecting psycopg2==2.7.6.1 (from -r /tmp/build_80c70617428bf4de44b1c5863014e914/requirements.txt (line 6))
+remote:          Downloading https://files.pythonhosted.org/packages/bc/2a/61a8f9719bd6df5b421abd91740cb0595fc3c17b28eaf89fe4f144472ca6/psycopg2-2.7.6.1-cp36-cp36m-manylinux1_x86_64.whl (2.7MB)
+remote:        Collecting psycopg2-binary==2.7.6.1 (from -r /tmp/build_80c70617428bf4de44b1c5863014e914/requirements.txt (line 7))
+remote:          Downloading https://files.pythonhosted.org/packages/cd/eb/4e872a11edd82079b4163035389051668c58cd2acc30777b6bee73f5f8a3/psycopg2_binary-2.7.6.1-cp36-cp36m-manylinux1_x86_64.whl (2.7MB)
+remote:        Collecting python-decouple==3.1 (from -r /tmp/build_80c70617428bf4de44b1c5863014e914/requirements.txt (line 8))
+remote:          Downloading https://files.pythonhosted.org/packages/9b/99/ddfbb6362af4ee239a012716b1371aa6d316ff1b9db705bfb182fbc4780f/python-decouple-3.1.tar.gz
+remote:        Collecting pytz==2018.7 (from -r /tmp/build_80c70617428bf4de44b1c5863014e914/requirements.txt (line 9))
+remote:          Downloading https://files.pythonhosted.org/packages/f8/0e/2365ddc010afb3d79147f1dd544e5ee24bf4ece58ab99b16fbb465ce6dc0/pytz-2018.7-py2.py3-none-any.whl (506kB)
+remote:        Installing collected packages: certifi, dj-database-url, pytz, Django, django-crispy-forms, gunicorn, psycopg2, psycopg2-binary, python-decouple
+remote:          Running setup.py install for python-decouple: started
+remote:            Running setup.py install for python-decouple: finished with status 'done'
+remote:        Successfully installed Django-2.1.4 certifi-2018.11.29 dj-database-url-0.5.0 django-crispy-forms-1.7.2 gunicorn-19.9.0 psycopg2-2.7.6.1 psycopg2-binary-2.7.6.1 python-decouple-3.1 pytz-2018.7
+remote: 
+remote: -----> Discovering process types
+remote:        Procfile declares types -> web
+remote: 
+remote: -----> Compressing...
+remote:        Done: 50.5M
+remote: -----> Launching...
+remote:        Released v9
+remote:        https://fuzzyapp.herokuapp.com/ deployed to Heroku
+remote: 
+remote: Verifying deploy... done.
+To https://git.heroku.com/fuzzyapp.git
+ * [new branch]      master -> master
+(FuzzyWork) TARA:FuzzyWork pratikaher$ git push heroku master
+Everything up-to-date
+(FuzzyWork) TARA:FuzzyWork pratikaher$ git add .
+(FuzzyWork) TARA:FuzzyWork pratikaher$ git commint -m "hello"
+git: 'commint' is not a git command. See 'git --help'.
+
+The most similar command is
+	commit
+(FuzzyWork) TARA:FuzzyWork pratikaher$ git commit -m "hello"
+[master 1fe0199] hello
+ 1 file changed, 8 insertions(+), 11 deletions(-)
+(FuzzyWork) TARA:FuzzyWork pratikaher$ git push heroku master
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 523 bytes | 523.00 KiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote: 
+remote: -----> Python app detected
+remote: -----> Installing requirements with pip
+remote: 
+remote: -----> Discovering process types
+remote:        Procfile declares types -> web
+remote: 
+remote: -----> Compressing...
+remote:        Done: 50.5M
+remote: -----> Launching...
+remote:        Released v10
+remote:        https://fuzzyapp.herokuapp.com/ deployed to Heroku
+remote: 
+remote: Verifying deploy... done.
+To https://git.heroku.com/fuzzyapp.git
+   59788ac..1fe0199  master -> master
+(FuzzyWork) TARA:FuzzyWork pratikaher$ heroku logs --tail
+2018-12-25T13:52:44.965764+00:00 app[api]: Enable Logplex by user pratikaher88@gmail.com
+2018-12-25T13:52:44.837434+00:00 app[api]: Initial release by user pratikaher88@gmail.com
+2018-12-25T13:52:44.837434+00:00 app[api]: Release v1 created by user pratikaher88@gmail.com
+2018-12-25T13:52:57.423321+00:00 app[api]: Running release v3 commands by user pratikaher88@gmail.com
+2018-12-25T13:52:57.440986+00:00 app[api]: Release v4 created by user pratikaher88@gmail.com
+2018-12-25T13:52:57.440986+00:00 app[api]: @ref:postgresql-animated-85268 completed provisioning, setting DATABASE_URL. by user pratikaher88@gmail.com
+2018-12-25T13:54:37.500048+00:00 app[api]: Set SECRET_KEY config vars by user pratikaher88@gmail.com
+2018-12-25T13:54:37.500048+00:00 app[api]: Release v5 created by user pratikaher88@gmail.com
+2018-12-25T13:55:50.613922+00:00 app[api]: Set DEBUG config vars by user pratikaher88@gmail.com
+2018-12-25T13:55:50.613922+00:00 app[api]: Release v6 created by user pratikaher88@gmail.com
+2018-12-25T13:56:17.462934+00:00 app[api]: Remove DEBUG config vars by user pratikaher88@gmail.com
+2018-12-25T13:57:13.000000+00:00 app[api]: Build started by user pratikaher88@gmail.com
+2018-12-25T13:57:35.000000+00:00 app[api]: Build failed -- check your build logs
+2018-12-25T13:57:58.000000+00:00 app[api]: Build started by user pratikaher88@gmail.com
+2018-12-25T13:58:34.916209+00:00 heroku[web.1]: Starting process with command `gunicorn FuzzyWork.wsgi --log-file -`
+2018-12-25T13:58:30.887561+00:00 app[api]: Deploy 59788ace by user pratikaher88@gmail.com
+2018-12-25T13:58:30.906871+00:00 app[api]: Scaled to web@1:Free by user pratikaher88@gmail.com
+2018-12-25T13:58:36.865888+00:00 app[web.1]: [2018-12-25 13:58:36 +0000] [4] [INFO] Starting gunicorn 19.9.0
+2018-12-25T13:58:36.866468+00:00 app[web.1]: [2018-12-25 13:58:36 +0000] [4] [INFO] Listening at: http://0.0.0.0:5903 (4)
+2018-12-25T13:58:36.866588+00:00 app[web.1]: [2018-12-25 13:58:36 +0000] [4] [INFO] Using worker: sync
+2018-12-25T13:58:36.869996+00:00 app[web.1]: [2018-12-25 13:58:36 +0000] [10] [INFO] Booting worker with pid: 10
+2018-12-25T13:58:36.896082+00:00 app[web.1]: [2018-12-25 13:58:36 +0000] [11] [INFO] Booting worker with pid: 11
+2018-12-25T13:58:39.000000+00:00 app[api]: Build succeeded
+2018-12-25T13:58:48.204557+00:00 heroku[router]: at=info method=GET path="/" host=fuzzyapp.herokuapp.com request_id=497234e8-822b-4dc0-b71a-de85bd7b0c1c fwd="45.64.210.18" dyno=web.1 connect=1ms service=52ms status=400 bytes=56303 protocol=https
+2018-12-25T13:58:49.310914+00:00 app[web.1]: Invalid HTTP_HOST header: 'fuzzyapp.herokuapp.com'. You may need to add 'fuzzyapp.herokuapp.com' to ALLOWED_HOSTS.
+2018-12-25T13:58:49.357703+00:00 app[web.1]: Bad Request: /favicon.ico
+2018-12-25T13:58:49.358461+00:00 app[web.1]: 10.180.173.24 - - [25/Dec/2018:13:58:49 +0000] "GET /favicon.ico HTTP/1.1" 400 56226 "https://fuzzyapp.herokuapp.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36"
+2018-12-25T13:58:49.361589+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=fuzzyapp.herokuapp.com request_id=ef78cce9-4a97-4547-afbc-c4c14f5db945 fwd="45.64.210.18" dyno=web.1 connect=0ms service=52ms status=400 bytes=56401 protocol=https
+2018-12-25T14:00:33.000000+00:00 app[api]: Build started by user pratikaher88@gmail.com
+2018-12-25T14:00:50.173537+00:00 heroku[web.1]: Restarting
+2018-12-25T14:00:50.180908+00:00 heroku[web.1]: State changed from up to starting
+2018-12-25T14:00:49.934334+00:00 app[api]: Deploy 1fe0199d by user pratikaher88@gmail.com
+2018-12-25T14:00:49.934334+00:00 app[api]: Release v10 created by user pratikaher88@gmail.com
+2018-12-25T14:00:54.584899+00:00 heroku[web.1]: Starting process with command `gunicorn FuzzyWork.wsgi --log-file -`
+2018-12-25T14:00:57.322484+00:00 heroku[web.1]: State changed from starting to up
+2018-12-25T14:00:56.955035+00:00 app[web.1]: [2018-12-25 14:00:56 +0000] [4] [INFO] Starting gunicorn 19.9.0
+2018-12-25T14:00:56.955612+00:00 app[web.1]: [2018-12-25 14:00:56 +0000] [4] [INFO] Listening at: http://0.0.0.0:54267 (4)
+2018-12-25T14:00:56.955722+00:00 app[web.1]: [2018-12-25 14:00:56 +0000] [4] [INFO] Using worker: sync
+2018-12-25T14:00:56.959817+00:00 app[web.1]: [2018-12-25 14:00:56 +0000] [10] [INFO] Booting worker with pid: 10
+2018-12-25T14:00:56.962015+00:00 app[web.1]: [2018-12-25 14:00:56 +0000] [11] [INFO] Booting worker with pid: 11
+2018-12-25T14:01:02.115863+00:00 heroku[router]: at=info method=GET path="/" host=fuzzyapp.herokuapp.com request_id=9c9b59a9-37f0-4508-b7b4-1dd1c74820f2 fwd="45.64.210.18" dyno=web.1 connect=1ms service=89ms status=200 bytes=2912 protocol=https
+2018-12-25T14:01:02.617146+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=fuzzyapp.herokuapp.com request_id=f580e083-c97d-4ae0-a6df-d2dce62f37e1 fwd="45.64.210.18" dyno=web.1 connect=1ms service=6ms status=404 bytes=266 protocol=https
+2018-12-25T14:01:05.947015+00:00 app[web.1]: 10.113.231.187 - - [25/Dec/2018:14:01:05 +0000] "GET /listentries HTTP/1.1" 500 27 "https://fuzzyapp.herokuapp.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36"
+2018-12-25T14:01:05.947421+00:00 heroku[router]: at=info method=GET path="/listentries" host=fuzzyapp.herokuapp.com request_id=4ca0f52d-280e-4c40-a08a-a9e245020970 fwd="45.64.210.18" dyno=web.1 connect=1ms service=140ms status=500 bytes=234 protocol=https
+2018-12-25T14:01:10.856018+00:00 heroku[router]: at=info method=GET path="/" host=fuzzyapp.herokuapp.com request_id=94c08c1b-623c-4b34-87b4-3c35972d6c49 fwd="45.64.210.18" dyno=web.1 connect=1ms service=11ms status=200 bytes=2912 protocol=https
+2018-12-25T14:01:14.874814+00:00 heroku[router]: at=info method=POST path="/" host=fuzzyapp.herokuapp.com request_id=23d1819e-08a8-4c1d-8bd7-301277c59c1f fwd="45.64.210.18" dyno=web.1 connect=1ms service=64ms status=500 bytes=234 protocol=https
+2018-12-25T14:01:14.874305+00:00 app[web.1]: 10.113.231.187 - - [25/Dec/2018:14:01:14 +0000] "POST / HTTP/1.1" 500 27 "https://fuzzyapp.herokuapp.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36"
+2018-12-25T14:01:20.939098+00:00 heroku[router]: at=info method=POST path="/" host=fuzzyapp.herokuapp.com request_id=f7110ac4-b4e2-46ad-afd6-6c4fe97f1c2e fwd="45.64.210.18" dyno=web.1 connect=1ms service=41ms status=500 bytes=234 protocol=https
+2018-12-25T14:01:20.938756+00:00 app[web.1]: 10.113.231.187 - - [25/Dec/2018:14:01:20 +0000] "POST / HTTP/1.1" 500 27 "https://fuzzyapp.herokuapp.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36"
+^C
+(FuzzyWork) TARA:FuzzyWork pratikaher$ heroku run python manage.py makemigrations
+
+Running python manage.py makemigrations on ⬢ fuzzyapp... up, run.2228 (Free)
+
+No changes detected
+(FuzzyWork) TARA:FuzzyWork pratikaher$ heroku run python manage.py migrate
+Running python manage.py migrate on ⬢ fuzzyapp... up, run.6803 (Free)
+Operations to perform:
+  Apply all migrations: DisReg, admin, auth, contenttypes, sessions
+Running migrations:
+  Applying DisReg.0001_initial... OK
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying sessions.0001_initial... OK
+(FuzzyWork) TARA:FuzzyWork pratikaher$ git commint -m "hello"
+git: 'commint' is not a git command. See 'git --help'.
+
+The most similar command is
+	commit
+(FuzzyWork) TARA:FuzzyWork pratikaher$ git add .
+(FuzzyWork) TARA:FuzzyWork pratikaher$ git commit -m "hello"
+[master 1f40a13] hello
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+(FuzzyWork) TARA:FuzzyWork pratikaher$ git push heroku master
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 357 bytes | 357.00 KiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote: 
+remote: -----> Python app detected
+remote: -----> Installing requirements with pip
+remote: 
+remote: -----> Discovering process types
+remote:        Procfile declares types -> web
+remote: 
+remote: -----> Compressing...
+remote:        Done: 50.4M
+remote: -----> Launching...
+remote:        Released v11
+remote:        https://fuzzyapp.herokuapp.com/ deployed to Heroku
+remote: 
+remote: Verifying deploy... done.
+To https://git.heroku.com/fuzzyapp.git
+   1fe0199..1f40a13  master -> master
+(FuzzyWork) TARA:FuzzyWork pratikaher$ git add .
+(FuzzyWork) TARA:FuzzyWork pratikaher$ git commit -m "hello"
+[master 62e6199] hello
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+(FuzzyWork) TARA:FuzzyWork pratikaher$ git push heroku master
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 341 bytes | 341.00 KiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote: 
+remote: -----> Python app detected
+remote: -----> Installing requirements with pip
+remote: 
+remote: -----> Discovering process types
+remote:        Procfile declares types -> web
+remote: 
+remote: -----> Compressing...
+remote:        Done: 50.5M
+remote: -----> Launching...
+remote:        Released v12
+remote:        https://fuzzyapp.herokuapp.com/ deployed to Heroku
+remote: 
+remote: Verifying deploy... done.
+To https://git.heroku.com/fuzzyapp.git
+   1f40a13..62e6199  master -> master
+(FuzzyWork) TARA:FuzzyWork pratikaher$ 
